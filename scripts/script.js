@@ -6,13 +6,14 @@ document.getElementById("doacaoSangue").addEventListener("submit", function (e) 
 
     let falha = false;
 
-    let nome = document.getElementById("nome").value;
-    if (nome === "") {
+    let nome = document.getElementById("nome").value.trim();
+    let partes = nome.split(" ");
+    if (partes === "") {
         alert("Insira seu nome!");
         falha = true;
         return false;
     }
-    if (nome.length < 10) {
+    if (partes.length < 2) {
         alert("Insira o seu nome completo!");
         falha = true;
         return false;
@@ -97,8 +98,6 @@ document.getElementById("doacaoSangue").addEventListener("submit", function (e) 
         cidade: cidade,
         estado: estado
     };
-
-    console.log(doacao);
 
     listaDoacoes.push(doacao);
 
