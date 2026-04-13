@@ -3,25 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Doação de sangue</title>
 </head>
 
+<header>
+    <img class="coracaoCabeca" src="assets/coracao_png.webp" alt="coracao">
+    <h1><img src="assets/asa_esquerda.gif" alt="esquerda"> Formulário de doação de sangue! <img src="assets/asa_direita.gif" alt="direita"></h1>
+    <img class="coracaoCabeca" src="assets/coracao_png.webp" alt="coracao">
+</header>
+
 <body>
 
+    <div id="meio">
     <form id="doacaoSangue">
-        <label for="nome">Nome Completo</label>
+        <label for="nome"><h3>Nome Completo</h3></label>
         <input type="text" id="nome" name="nome">
 
-        <label for="email">E-mail</label>
+        <label for="email"><h3>E-mail</h3></label>
         <input type="email" id="email" name="email">
 
-        <label for="idade">Idade</label>
+        <label for="idade"><h3>idade</h3></label>
         <input type="number" id="idade" name="idade">
 
-        <label for="peso">Peso</label>
+        <label for="peso"><h3>Peso</h3></label>
         <input type="number" id="peso" name="peso">
 
-        <label for="tipoSanguineo">Tipo Sanguineo</label>
+        <label for="tipoSanguineo"><h3>Tipo Sanguíneo</h3></label>
         <select name="tipoSanguineo" id="tipoSanguineo">
             <option value="">Selecione</option>
             <option value="A+">A +</option>
@@ -34,20 +42,20 @@
             <option value="O-">O -</option>
         </select>
 
-        <label for="tel">Telefone</label>
+        <label for="tel"><h3>Telefone</h3></label>
         <input type="text" id="tel" name="tel">
 
-        <label for="cidade">Cidade</label>
+        <label for="cidade"><h3>Cidade</h3></label>
         <input type="text" id="cidade" name="cidade">
 
-        <label for="estado">Estado</label>
+        <label for="estado"><h3>Estado</h3></label>
         <input type="text" id="estado" name="estado">
 
-        <button id="envio" type="submit">Enviar</button>
+        <button id="envio" type="submit"><h3>Enviar</h3></button>
 
         <script src="scripts/script.js"></script>
     </form>
-
+    </div>
 </body>
 
 </html>
